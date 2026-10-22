@@ -15,7 +15,61 @@
 <div class="mocksite"><header class="site-header"><button class="logo" data-nav="home" aria-label="Daybreak Coffee, Home"><span class="sun">☀</span><span class="logo-text">Daybreak<br>Coffee</span></button><nav class="nav" aria-label="Website pages"><button data-nav="home" aria-current="page">Home</button><button data-nav="coffee">Category Page</button><button data-nav="plans">My Subscriptions</button></nav><button class="cart" id="cart" aria-label="Shopping cart demo">♙</button></header><main id="content" tabindex="-1"></main><footer class="footer"><button class="logo" data-nav="home"><span class="sun">☀</span><span class="logo-text">Daybreak<br>Coffee</span></button><div class="social" aria-label="Social links are illustrative">● ◎ ▶ 𝕏 in ♪</div><div class="footcontact">hello@daybreakcoffee.com<br>123 Morning Lane, Coffee City</div></footer></div><div class="fine-print">Fictional business · Interactive copywriting sample · No actual purchases or subscriptions</div><div class="notice hidden" id="notice" role="status"></div>
 <script>
 const urls={light:'https://static.wixstatic.com/media/8e644b_ab8a72b13ede4a368482a84802c6b228~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,enc_auto/ai-generated-IMAGE.jpg',medium:'https://static.wixstatic.com/media/8e644b_6c38b4d616ad41e8a697ec0c1b38b165~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,enc_auto/ai-generated-IMAGE.jpg',dark:'https://static.wixstatic.com/media/8e644b_e6df35f1813c4b35aa2be4603e36d17c~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,enc_auto/ai-generated-IMAGE.jpg',subscription:'https://static.wixstatic.com/media/8e644b_91eb96e523654cd98f0e021f1172104d~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,enc_auto/ai-generated-IMAGE.jpg',why:'https://static.wixstatic.com/media/8e644b_832c725c8ac74869846a2b25751b0485~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,enc_auto/ai-generated-IMAGE.jpg'};
-const copy={before:{heroTitle:'Premium Coffee for Every Occasion',heroText:'Welcome to The Sunday Standard! We are dedicated to providing high-quality coffee products for our customers. Our coffee is carefully sourced and roasted to ensure excellent flavor and freshness.',heroCta:'Shop Our Coffee',productsTitle:'Our Coffee Products',productsIntro:'We offer a wide selection of coffee beans for different tastes and preferences. All of our products are made with quality and customer satisfaction in mind.',roasts:[['Light Roasts',''],['Medium Roasts',''],['Dark Roasts','']],subTitle:'Coffee Subscriptions',subText:'Sign up for our convenient monthly coffee subscription service and enjoy delicious coffee delivered directly to your door. We offer flexible subscription options to meet your needs.',subCta:'Subscribe Now',whyTitle:'Why Choose Us?',whyText:'We believe in quality, freshness, and excellent customer service. Our team works hard to provide a positive experience for every customer.',coffeeTitle:'Our Coffee Products',coffeeIntro:'We offer different coffee roasts for your enjoyment. Browse our products to find your preferred option.',plansTitle:'My Subscriptions',plansIntro:'Choose a coffee subscription plan that meets your needs. Our plans include regular coffee deliveries.',plans:[['Basic Plan','One bag of coffee delivered monthly.'],['Standard Plan','Two bags of coffee delivered monthly.'],['Premium Plan','Four bags of coffee delivered monthly.']]},after:{heroTitle:'A Better Morning Is Brewing.',heroText:'The first sip should be the best part of waking up. Meet delicious coffee made for slow mornings, busy Mondays, and everything in between.',heroCta:'Find Your Morning Roast',productsTitle:'Meet Your New Morning Ritual',productsIntro:'Bright and lively, smooth and balanced, or bold enough to wake the whole house. However you take your mornings, we have your roast.',roasts:[['Rise & Shine','A bright, easygoing light roast for slow starts and sunny moods.'],['The Daily Ritual','Smooth, balanced comfort you’ll look forward to every morning.'],['Dark Before Dawn','Deep, rich flavor for those who like their coffee to mean business.']],subTitle:'Never Wake Up to an Empty Bag.',subText:'Your favorite beans, delivered before the last scoop disappears. Choose your roast, pick your pace, and change things whenever life does.',subCta:'Make Mornings Easier',whyTitle:'Because Ordinary Mornings Deserve Extraordinary Coffee.',whyText:'Great coffee makes the little moments better. We bring thoughtfully chosen beans to your door, so you can savor the moments before the day begins.',coffeeTitle:'Find the Roast That Gets You.',coffeeIntro:'Whether your perfect cup is bright, balanced, or unapologetically bold, your next morning favorite is right here.',plansTitle:'Good Coffee, Right on Schedule.',plansIntro:'Skip the grocery-store scramble. Choose the delivery that fits your routine, and keep your favorite coffee close.',plans:[['The Easy Start','One bag a month for your morning moment.'],['Your Daily Ritual','Two bags each month for cups worth repeating.'],['The Coffee Household','Four bags a month for the serious coffee crowd.']]}};
+const copy=
+{before:{heroTitle:'Premium Coffee for Every Occasion',
+heroText:'Welcome to The Sunday Standard! We are dedicated to providing high-quality coffee products for our customers. Our coffee is carefully sourced and roasted to ensure excellent flavor and freshness.',
+heroCta:'Shop Our Coffee',
+
+productsTitle:'Our Coffee Products',
+productsIntro:'We offer a wide selection of coffee beans for different tastes and preferences. All of our products are made with quality and customer satisfaction in mind.',
+
+roasts:[['Light Roasts',''],['Medium Roasts',''],['Dark Roasts','']],
+
+subTitle:'Coffee Subscriptions',
+subText:'Sign up for our convenient monthly coffee subscription service and enjoy delicious coffee delivered directly to your door. We offer flexible subscription options to meet your needs.',
+subCta:'Subscribe Now',
+
+whyTitle:'Why Choose Us?',
+whyText:'We believe in quality, freshness, and excellent customer service. Our team works hard to provide a positive experience for every customer.',
+
+coffeeTitle:'Our Coffee Products',
+coffeeIntro:'We offer different coffee roasts for your enjoyment. Browse our products to find your preferred option.',
+
+plansTitle:'My Subscriptions',
+plansIntro:'Choose a coffee subscription plan that meets your needs. Our plans include regular coffee deliveries.',
+plans:[['Basic Plan','One bag of coffee delivered monthly.'],['Standard Plan','Two bags of coffee delivered monthly.'],['Premium Plan','Four bags of coffee delivered monthly.']]},
+
+
+
+after:{heroTitle:'Brewing Better Mornings.',
+
+heroText:'Sometimes, that first sip is the best part of waking up. Meet delicious coffee that makes every morning feel like Sunday.',
+heroCta:'Find Your Morning Roast',
+
+productsTitle:'Meet Your New Morning Ritual',
+productsIntro:'Light and lively, smooth and balanced, or bold enough to wake the whole house. Whatever morning you have, we have your roast.',
+
+roasts:[['Rise & Shine','A bright, easygoing light roast for the mornings that start off slow.'],
+['The Daily Dose',"Smooth, balanced comfort that sparks life into every morning."],
+['Deepest Dark','Deep, rich flavor for those who like their coffee to mean business.']],
+
+subTitle:'Never Wake Up to an Empty Bag.',
+subText:'Your favorite beans, delivered just in time. Choose your roast, pick your pace, and change things whenever life does.',
+subCta:'Make Your Mornings Easier',
+
+whyTitle:'Because Even Ordinary Mornings Deserve Extraordinary Coffee.',
+whyText:'Great coffee makes the little moments better. We bring thoughtfully chosen beans to your door, so you can savor the moments before the day begins.',
+
+coffeeTitle:'Find the Roast That Gets You.',
+coffeeIntro:'Whether your perfect cup is bright, balanced, or bold, your next morning favorite is right here.',
+
+plansTitle:'Good Coffee, Right on Schedule.',
+plansIntro:'Skip the grocery-store scramble. Choose the delivery that fits your routine, and keep your favorite coffee close at hand.',
+plans:[['The Easy Start','One bag a month for your morning moment.'],['The Balanced Morning','Two bags each month for cups worth repeating.'],
+['The Coffee Home','Four bags a month for the serious coffee crowd.']]}};
+
+
+
 const esc=s=>String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));let mode='before',page='home';const container=document.getElementById('content');function render(){const c=copy[mode];for(const k of ['before','after'])document.getElementById(k).setAttribute('aria-pressed',String(mode===k));document.querySelectorAll('[data-nav]').forEach(e=>{if(e.tagName==='BUTTON'&&e.closest('nav'))e.setAttribute('aria-current',e.dataset.nav===page?'page':'false')});const roastCards=c.roasts.map((r,i)=>`<button class="roast" data-go="coffee" aria-label="Explore ${esc(r[0])}"><img src="${[urls.light,urls.medium,urls.dark][i]}" alt="${['Light roast coffee beans in a ceramic bowl','Medium roast coffee beans on fabric','Dark roast coffee beans'][i]}" loading="lazy"><h3>${esc(r[0])}</h3>${r[1]?`<p>${esc(r[1])}</p>`:''}</button>`).join('');if(page==='home')container.innerHTML=`<section class="home-hero"><div class="hero-inner"><h1>${esc(c.heroTitle)}</h1><p>${esc(c.heroText)}</p><button class="btn" data-go="coffee">${esc(c.heroCta)}</button></div></section><section class="section-wrap"><div class="product-intro"><h2>${esc(c.productsTitle)}</h2><p>${esc(c.productsIntro)}</p></div><div class="roasts">${roastCards}</div></section><section class="subscription"><div><h2>${esc(c.subTitle)}</h2><p>${esc(c.subText)}</p><button class="btn" data-go="plans">${esc(c.subCta)}</button></div><img src="${urls.subscription}" alt="Pour-over coffee brewing beside a softly lit window" loading="lazy"></section><section class="why"><img src="${urls.why}" alt="Roasted coffee beans in a rustic ceramic bowl" loading="lazy"><div><h2>${esc(c.whyTitle)}</h2><p>${esc(c.whyText)}</p></div></section>`;else if(page==='coffee')container.innerHTML=`<section class="extra-page"><div class="product-intro"><h1>${esc(c.coffeeTitle)}</h1><p>${esc(c.coffeeIntro)}</p></div><div class="roasts">${roastCards.replaceAll('data-go="coffee"','data-go="plans"')}</div><p class="page-note">Illustrative roast descriptions for this fictional store.</p></section>`;else container.innerHTML=`<section class="extra-page"><div class="page-banner"><div><h1>${esc(c.plansTitle)}</h1><p>${esc(c.plansIntro)}</p><button class="btn" data-go="coffee">Browse Our Coffee</button></div><img src="${urls.subscription}" alt="Fresh coffee being brewed" loading="lazy"></div><div class="plans-grid">${c.plans.map(([name,description])=>`<div class="plan"><h3>${esc(name)}</h3><p>${esc(description)}</p><button class="btn" data-notice="This is a portfolio demonstration. No subscriptions are processed.">Choose Plan</button></div>`).join('')}</div></section>`;container.querySelectorAll('img').forEach(img=>{let fallback='assets/'+(['light','medium','dark','subscription','why'].find(key=>img.src===urls[key])||'subscription')+'.jpg';img.onerror=()=>{img.onerror=null;img.src=fallback}});container.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));container.querySelectorAll('[data-notice]').forEach(b=>b.addEventListener('click',()=>notice(b.dataset.notice)))}function go(p){page=p;render();window.scrollTo({top:0,behavior:'smooth'});}function notice(message){let n=document.getElementById('notice');n.textContent=message;n.classList.remove('hidden');clearTimeout(window.noticeTimeout);window.noticeTimeout=setTimeout(()=>n.classList.add('hidden'),3500)}document.querySelectorAll('[data-nav]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.nav)));for(const k of ['before','after'])document.getElementById(k).addEventListener('click',()=>{mode=k;render()});document.getElementById('cart').addEventListener('click',()=>notice('Demonstration only — cart purchases are disabled.'));render();
 </script>
 </body></html>
